@@ -45,6 +45,7 @@ def palette_gen(colors, max_iterations):
 
     for i in range(len(goodR)):
         palette.append([goodR[i], goodG[i], goodB[i]])
+    palette.append((0,0,0))
     palette = np.clip(palette, 0, 255).astype(np.uint8)
     return(palette)
 
